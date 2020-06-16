@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+ln -s $PWD/.bashrc $HOME/.bashrc
+#ln -s ./.bash__defaults $HOME/.bash__defaults
+
+for file in $(/bin/ls -1 .bash__*); do 
+  ln ./$file $HOME/$file
+done
