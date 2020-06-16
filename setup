@@ -1,0 +1,7 @@
+Install neovim, fzf, and ripgrep, lolcat, cowsay, fortune
+
+mkdir -p ~/.config
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+git clone https://github.com/corymb/neovim-dotfiles.git ~/.config/nvim
+nvim +PlugInstall
+
