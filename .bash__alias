@@ -30,6 +30,7 @@ alias rgrep='rgrep --color=auto'
 
 # Git Commands
 # Add and Commit are used as functions
+alias ga='git add'
 alias gp='git push'
 alias gs='git status'
 alias gd='git diff'
@@ -43,3 +44,4 @@ alias gbsu='git branch --set-upstream'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gcam='git commit -a -m'
+alias gcm='git commit -m'
