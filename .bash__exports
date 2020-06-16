@@ -1,0 +1,32 @@
+export PATH=$HOME/scripts:$HOME/.local/bin:/usr/local/bin:$PATH
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+
+
+# Bash History
+export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
+export HISTCONTROL=ignoreboth
+export HISTIGNORE='&:clear:ls:cd:[bf]g:exit:[ t\]*'
+
+# Bitbake Env settings
+export BBPATH=/stuff/maemo-angstrom:/stuff/build:/stuff/openembedded
+export PATH=/stuff/bitbake/bin:$PATH
+
+# Proxy settings
+#export http_proxy='127.0.0.1:5050'
+#export https_proxy='127.0.0.1:5050'
+#export ftp_proxy='127.0.0.1:5050'
+export http_proxy=
+export https_proxy=
+export ftp_proxy=
+
+# FZF
+[ -f /usr/local/Cellar/fzf/0.21.1/shell/key-bindings.bash ] && source /usr/local/Cellar/fzf/0.21.1/shell/key-bindings.bash
+export FZF_DEFAULT_COMMAND="rg --files"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# Python
+export PYTHONDONTWRITEBYTECODE=1
+
+# Misc.
+export EDITOR=nvim
+export PAGER=less

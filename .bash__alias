@@ -1,0 +1,45 @@
+# Cool colors for man pages
+alias man="TERMINFO=~/.terminfo TERM=mostlike LESS=C PAGER=less man"
+
+# Some more, to avoid mistakes
+alias rm='rm -i'
+alias cp='cp -ia'
+alias mv='mv -i'
+
+
+# Quickly load bashrc
+alias gogo='source ~/.bashrc'
+
+
+alias vim=nvim
+alias h=history
+alias j=jobs
+
+# Make du and df report sizes in bytes, with commas, like our ls
+alias du="du --block-size=\'1"
+alias df="df -T --block-size=\'1"
+
+alias ls='ls -FG'
+alias l='ls -lrt'
+alias ll='ls -l'
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias rgrep='rgrep --color=auto'
+
+# Git Commands
+# Add and Commit are used as functions
+alias gp='git push'
+alias gs='git status'
+alias gd='git diff'
+alias gdc='gir diff --cached'
+alias gr='git reflog'
+alias glf='git ls-files'
+alias gpr='git pull --rebase'
+alias gb='git branch'
+alias aggro='git gc --aggressive'
+alias gbsu='git branch --set-upstream'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gcam='git commit -a -m'
