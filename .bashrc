@@ -10,5 +10,5 @@ source $PWD/.bash__prompt
 
 echo -e "Good Morning, $NICKNAME!\n"
 echo -ne "It's "; date '+%A, %B %-d %Y'; echo
-fortune
+fortune | cowsay | lolcat
 echo
