@@ -1,0 +1,44 @@
+[user]
+  name = Vincent
+  email = vincent@liven.com.au
+
+[core]
+  pager = less -F -X
+  #excludesfile = ~/.config/git/global-gitignore
+  #hooksPath = ~/.config/git/hooks
+
+[help]
+  autoCorrect = -1
+
+[color]
+  ui = true
+
+[mergetool "vimdiff"]
+  cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED 
+
+[diff]
+  algorithm = histogram
+  tool = vimdiff
+
+[merge]
+  conflictstyle = diff3
+  defaultToUpstream = true
+  log = 50
+  tool = vimdiff
+
+[rebase]
+  autostash = true
+
+[rerere]
+  enabled = true
+
+[push]
+  default = simple
+  followTags = true
+
+[alias]
+  co = checkout
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  d = diff --ignore-all-space --ignore-blank-lines --word-diff=color --color-moved=zebra --color-moved-ws=allow-indentation-change --find-renames
+  dc = diff --ignore-all-space --ignore-blank-lines --word-diff=color --color-moved=zebra --color-moved-ws=allow-indentation-change --find-renames --cached
+  pushhh = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
