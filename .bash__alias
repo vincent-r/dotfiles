@@ -10,8 +10,8 @@ alias mv='mv -i'
 # Quickly load bashrc
 alias gogo='source ~/.bashrc'
 
-
 alias vim=nvim
+alias vi=nvim
 alias h=history
 alias j=jobs
 

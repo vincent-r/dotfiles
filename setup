@@ -5,3 +5,4 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 git clone https://github.com/corymb/neovim-dotfiles.git ~/.config/nvim
 nvim +PlugInstall
 
+# Other shit to install: awscli, aws-vault
