@@ -14,5 +14,5 @@ fi
 
 echo -e "Good Morning, $NICKNAME!\n"
 echo -ne "It's "; date '+%A, %B %-d %Y'; echo
-fortune | cowsay | lolcat
+fortune | cowsay -f `ls /usr/local/Cellar/cowsay/3.04/share/cows | shuf -n 1` | lolcat
 echo
