@@ -17,6 +17,9 @@ export smoothgreen="\[\033[0;38;5;42m\]"
 
 export PS1='\u@\h \[\033[1;33m\]\w\[\033[0m\]$(parse_git_branch)\n$ '
 
+# OSX wants this but i dun give a fuck
+update_terminal_cwd() { echo; }
+
 # This just looks all a bit fucked so I'm leaving here as a reference for how the colours above
 # are utilised.
 #
