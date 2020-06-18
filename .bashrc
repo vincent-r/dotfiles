@@ -8,6 +8,10 @@ source $HOME/.bash__exports
 source $HOME/.bash__alias
 source $HOME/.bash__prompt
 
+if [ -f $HOME/.bash__secrets ]; then
+  source $HOME/.bash__secrets
+fi
+
 echo -e "Good Morning, $NICKNAME!\n"
 echo -ne "It's "; date '+%A, %B %-d %Y'; echo
 fortune | cowsay | lolcat
